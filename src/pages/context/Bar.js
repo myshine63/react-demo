@@ -1,9 +1,12 @@
 import React from "react";
-import Button from "./Button";
+import {Button, ClassButton} from "./Button";
 
 function Bar({theme}) {
   return (
-    <Button theme={theme}/>
+    <>
+      <Button theme={theme}/>
+      <ClassButton theme={theme}/>
+    </>
   )
 }
 

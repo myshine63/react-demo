@@ -1,7 +1,7 @@
 import React from "react";
 import Bar from "./Bar";
 
-export const ThemeContext = React.createContext('black')
+const ThemeContext = React.createContext('black')
 
 function ContextPage() {
   return (
@@ -12,4 +12,5 @@ function ContextPage() {
   )
 }
 
-export default ContextPage
+export default ContextPage;
+export {ThemeContext};
