@@ -12,7 +12,6 @@ import './App.scss'
 const Home = asyncLoad(() => import('./pages/home/Home'))
 const ErrorPage = asyncLoad(() => import('./pages/errorPage/ErrorPage'));
 const RefsPage = asyncLoad(() => import('./pages/refs/RefsPage'));
-const ContextPage = asyncLoad(() => import('./pages/contextPage/ContextPage'));
 const RenderPropPage = asyncLoad(() => import('./pages/render-prop/RenderPropPage'));
 const RouterPage = asyncLoad(() => import('./pages/react-router/RouterPage'));
 const TodoPage = asyncLoad(() => import('./pages/todo/TodoPage'));
@@ -35,9 +34,6 @@ function App() {
             <Link to='/refs'>refs</Link>
           </li>
           <li>
-            <Link to='/context'>context</Link>
-          </li>
-          <li>
             <Link to='/router-page'>router-page</Link>
           </li>
           <li>
@@ -54,7 +50,6 @@ function App() {
             <Route path='/home' component={Home} exact={true}/>
             <Route path='/err' component={ErrorPage} exact={true}/>
             <Route path='/refs' component={RefsPage} exact={true}/>
-            <Route path='/context' component={ContextPage} exact={true}/>
             <Route path='/render-prop' component={RenderPropPage} exact={true}/>
             {/*因为router-page要是用嵌套路由，因此不能使用exact*/}
             <Route path='/router-page' component={RouterPage}/>

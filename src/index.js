@@ -6,6 +6,8 @@ import store from './store/store'
 import {Provider} from 'react-redux'
 import 'antd/dist/antd.css';
 import './index.css';
+import asyncList from "./mocks/asyncList";
+
 
 ReactDOM.render(
 <React.StrictMode>
