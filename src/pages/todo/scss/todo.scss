@@ -1,0 +1,10 @@
+.todo-container {
+  .todo-list {
+    li {
+      border-bottom: 1px solid blanchedalmond;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

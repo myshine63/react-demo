@@ -10,7 +10,7 @@ class RefsPage extends React.Component {
   render() {
     return (
       <div>
-        refs 转发
+        <h1>如何转发refs的案例</h1>
         <ForwardRef ref={this.ref}>
           click
         </ForwardRef>
