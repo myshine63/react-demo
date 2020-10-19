@@ -1,22 +1,6 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 
-function Home() {
-  const [count, setCount] = useState(0);
-  console.log(1111, count)
-  useEffect(() => {
-    console.log(count);
-    return () => {
-      console.log(count)
-    }
-  })
-  return (
-    <button onClick={() => {
-      setCount(count + 1)
-    }}>
-      {count}次
-    </button>
-  )
+export default function () {
+  return <h1>welcome come to HePan</h1>
 }
 
-
-export default React.memo(Home)
