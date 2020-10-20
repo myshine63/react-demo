@@ -23,7 +23,7 @@ const getDataFail = () => {
 const getList = (params) => {
   return function (dispatch) {
     dispatch(startFetching());
-    axios.post('/getList', params).then(data => {
+    axios.post('/getList', params).then(({data}) => {
       dispatch(getDataSuccess(data))
     }).catch(() => {
       dispatch(getDataFail())
