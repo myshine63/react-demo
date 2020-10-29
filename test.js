@@ -1,11 +1,5 @@
-const callback = data => {
-  console.log(data)
-}
-
-function asyncFunc(callback) {
-  setTimeout(100, () => {
-    callback(111);
+it('1',()=>{
+  return Promise.reject(111).catch(data=>{
+    expect(data).toBe(111)
   })
-}
-
-asyncFunc(callback);
+})

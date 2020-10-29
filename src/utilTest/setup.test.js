@@ -1,3 +1,5 @@
+// jest的钩子函数
+
 beforeAll(() => console.log('1 - beforeAll'));
 afterAll(() => console.log('1 - afterAll'));
 beforeEach(() => console.log('1 - beforeEach'));
