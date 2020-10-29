@@ -1,4 +1,5 @@
 import todoConstants from "./todoConstants";
+import {PrefixConstants} from "../PrefixConstants";
 
 const initState = {
   todos: [],
@@ -6,7 +7,11 @@ const initState = {
 }
 
 function todoReducer(state = initState, action) {
-  switch (action.type) {
+  const type = action.type
+  if (!type.startsWith(PrefixConstants.TODO_REDUCER)) {
+    return state
+  }
+  switch (type.replace(PrefixConstants.TODO_REDUCER, '')) {
     case todoConstants.SET_VISIBILITY_FILTER:
       return {...state, visibilityFilter: action.payload}
 

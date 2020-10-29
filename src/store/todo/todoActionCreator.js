@@ -1,22 +1,7 @@
-import todoConstants from "./todoConstants";
+import todoConstants from "./todoConstants"
+import {PrefixConstants,actionFunctionCreator} from "../PrefixConstants";
 
-export const setVisibilityFilter = (filterType) => {
-  return {
-    type: todoConstants.SET_VISIBILITY_FILTER,
-    payload: filterType
-  }
-}
-
-export const addTodo = (todo) => {
-  return {
-    type: todoConstants.ADD_TODO,
-    payload: todo
-  }
-}
-
-export const toggleTodo = (index) => {
-  return {
-    type: todoConstants.TOGGLE_TODO,
-    payload: index
-  }
-}
+let FunctionCreator = actionFunctionCreator(PrefixConstants.TODO_REDUCER);
+export const setVisibilityFilter = FunctionCreator(todoConstants.SET_VISIBILITY_FILTER);
+export const addTodo = FunctionCreator(todoConstants.ADD_TODO);
+export const toggleTodo = FunctionCreator(todoConstants.TOGGLE_TODO);
