@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`测试变化的数据 1`] = `
+Object {
+  "age": Any<Number>,
+  "birthday": Any<Date>,
+  "name": "tom",
+}
+`;

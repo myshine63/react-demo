@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`渲染home页面 1`] = `
+<h1>
+  hello he pan
+</h1>
+`;

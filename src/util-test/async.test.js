@@ -28,14 +28,14 @@ test('测试错误的promise', () => {
   *  因此我们需要添加 expect.assertions(1)，表示我们希望expect执行一次。
   * */
   expect.assertions(1); // 希望expect断言执行一次，如果没有执行1次，则测试错误
-  return Promise.resolve('error').catch(e => {
+  return Promise.reject('error').catch(e => {
     expect(e).toMatch('error')
   })
 })
 
 it('测试拒绝的promise2', () => {
   expect.assertions(1);
-  return expect(Promise.reject('error')).rejects('error')
+  return expect(Promise.reject('error')).rejects.toMatch('error')
 })
 
 test('测试async await', async () => {

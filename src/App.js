@@ -10,7 +10,7 @@ import asyncLoad from "./utils/asyncLoad";
 import './App.scss'
 //--- page component ---//
 const Home = asyncLoad(() => import('./pages/home/Home'))
-const ErrorPage = asyncLoad(() => import('./pages/errorPage/ErrorPage'));
+const ErrorPage = asyncLoad(() => import('./pages/error-page/ErrorPage'));
 const RefsPage = asyncLoad(() => import('./pages/refs/RefsPage'));
 const RenderPropPage = asyncLoad(() => import('./pages/render-prop/RenderPropPage'));
 const RouterPage = asyncLoad(() => import('./pages/react-router/RouterPage'));

@@ -1,5 +1,8 @@
-it('1',()=>{
-  return Promise.reject(111).catch(data=>{
-    expect(data).toBe(111)
+function a() {
+  console.log(1)
+  setTimeout(() => {
+    console.log(2)
   })
-})
+  console.log(3)
+}
+a()
