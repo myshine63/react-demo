@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app组件 1`] = `
+<section
+  className="ant-layout ant-layout-has-sider app"
+>
+  <aside
+    className="ant-layout-sider ant-layout-sider-dark"
+    style={
+      Object {
+        "flex": "0 0 200px",
+        "maxWidth": "200px",
+        "minWidth": "200px",
+        "width": "200px",
+      }
+    }
+  >
+    <div
+      className="ant-layout-sider-children"
+    >
+      <ul
+        className="aside-container"
+      >
+        <li>
+          <a
+            href="/home"
+            onClick={[Function]}
+          >
+            home
+          </a>
+        </li>
+        <li>
+          <a
+            href="/err"
+            onClick={[Function]}
+          >
+            err
+          </a>
+        </li>
+        <li>
+          <a
+            href="/refs"
+            onClick={[Function]}
+          >
+            refs
+          </a>
+        </li>
+        <li>
+          <a
+            href="/router-page"
+            onClick={[Function]}
+          >
+            router-page
+          </a>
+        </li>
+        <li>
+          <a
+            href="/todo"
+            onClick={[Function]}
+          >
+            todo
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+  <section
+    className="ant-layout"
+  >
+    <main
+      className="ant-layout-content"
+    >
+      <div>
+        loading
+      </div>
+    </main>
+  </section>
+</section>
+`;
